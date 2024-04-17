@@ -1,9 +1,11 @@
 SIMULATION AND IMPLEMENTATION OF  COMBINATIONAL LOGIC CIRCUITS
 
-AIM: 
+# AIM: 
+
  To simulate and synthesis ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR using Vivado.
 
-APPARATUS REQUIRED:
+# APPARATUS REQUIRED:
+
 vivado 2023.2.
 
 **LOGIC DIAGRAM**
@@ -35,6 +37,7 @@ MAGNITUDE COMPARATOR
 
   
 PROCEDURE:
+
 STEP:1 Start the vivado software, Select and Name the New project.
 
 STEP:2 Select the device family, device, package and speed.
@@ -50,6 +53,7 @@ STEP:6 Click the simulation to simulate the program and give the inputs and veri
 STEP:7 compare the output with truth table.
 
 VERILOG CODE
+
 8-3 ENCODER:
 
 module encoder(d,a,b,c);
@@ -65,6 +69,7 @@ or (c,d[1],d[3],d[5],d[7]);
 endmodule
 
 3-8 DECODER:
+
 module decoder(A,E,Y);
 
 input [1:0]A;
@@ -96,6 +101,7 @@ decoder_2_4 d2(A[1:0],~A[2],Y[7:4]);
 endmodule
 
 8-1 MULTIPLEXER:
+
 module multi(i,s,y);
 
 input[7:0]i;
@@ -133,6 +139,7 @@ end
 endmodule
 
 1-8 DEMULTIPLEXER:
+
 module demultiplexer(d1,d2,d3,d4,d5,d6,d7,d8,i,s0,s1,s2);
 
 input i,s0,s1,s2;
@@ -166,6 +173,7 @@ and g11(d8,s0,s1,s2,i);
 endmodule
 
 2 BIT MAGNITUDE COMPARATOR :
+
 module mag_com(a,b,gt,it,eq);
 
 input [3:0]a,b;
@@ -218,15 +226,25 @@ endmodule
 
 
 OUTPUT WAVEFORM
+
 ENCODER:
+
 ![image](https://github.com/priyangi123/VLSI-LAB-EXP-2/assets/165141104/fa34af20-ca70-46e4-8f00-044a66900232)
+
 DECODER:
+
 ![image](https://github.com/priyangi123/VLSI-LAB-EXP-2/assets/165141104/e21f163a-186c-4d36-9050-3b4c9673fe6b)
+
 MULTIPLEXER:
+
 ![image](https://github.com/priyangi123/VLSI-LAB-EXP-2/assets/165141104/3080c243-8083-49bf-a913-8f4572911173)
+
 DEMULTIPLEXER:
+
 ![image](https://github.com/priyangi123/VLSI-LAB-EXP-2/assets/165141104/c156ef0b-60ef-4c85-83ec-e30b35b30738)
+
 2 BIT MAGNITUDE COMPARATOR:
+
 ![image](https://github.com/priyangi123/VLSI-LAB-EXP-2/assets/165141104/9957c103-adba-499f-8d04-21c0bd9b7a77)
 
 RESULT:
